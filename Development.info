@@ -1,0 +1,17 @@
+Development Information for Multiplayer Reworked
+
+Event Changes:
+
+Polish Lituanian Union (flavor_pol.18) adds two new options that
+1.  Divides Lithuania between all possible nations
+2.  Divides Lithuania between all possible nations and Poland inherits the remainder of Lithuania
+All three option have been adjusted to be equally possible instead of being heavily in favour of union
+
+Iberian Union () adds a new option
+1.  Divides Aragon and Naples between all possible nations
+1.  Divides Aragon and Naples between all possible nations and Castille inherits the remainder of Aragon
+
+Defines Changes:
+
+Province Exploitation can now be done without monthly limitation
+1.  EXPLOIT_COOLDOWN_MONTHS = 240 (Line 485)
