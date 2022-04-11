@@ -390,7 +390,7 @@ NDiplomacy = {
 	STUDY_TECHNLOGY_CATEGORY_CAP = 1,				-- Max number of monarch points possible to gain in a category.
 	STUDY_TECHNOLOGY_MIN_TECHS_AHEAD = 2,			-- Target must be at least this number of techs ahead of you to get power
 
-	THREATEN_WAR_PRESTIGE = 10,						-- Prestige lost due to complying with Threaten War.
+	THREATEN_WAR_PRESTIGE = 15,						-- Prestige lost due to complying with Threaten War.
 	THREATEN_WAR_TRUCE_YEARS = 5,					-- Length of truce imposed by Threaten War.
 	THREATEN_WAR_ALLIANCE_OFFSET = 1.5,				-- If relative alliance strength is above this threshold, start applying gradient.
 	THREATEN_WAR_ALLIANCE_GRADIENT = 20,			-- Relative alliance strength to acceptance value, capped at +100.
@@ -464,7 +464,7 @@ NDiplomacy = {
 	FORCE_JOIN_HRE_AUTHORITY_PER_DEVELOPMENT = 0.1,
 	FORCE_JOIN_HRE_YEARS_BOUND_BY_TREATY = 50,
 
-	HRE_AUTHORITY_JOIN_EMPIRE = 5,
+	HRE_AUTHORITY_JOIN_EMPIRE = 10,
 	HRE_AUTHORITY_LEAVE_EMPIRE = -10,
 
 	IMPERIAL_REALM_WAR_IA_COST = 25.0,				-- How much IA the Realm War CB costs.
@@ -482,7 +482,7 @@ NCountry = {
 	EXPLOIT_ADM_INCOME = 60,	-- months of income
 	EXPLOIT_DIP_SAILORS = 6,
 	EXPLOIT_MIL_MANPOWER = 6,
-	EXPLOIT_COOLDOWN_MONTHS = 240,
+	EXPLOIT_COOLDOWN_MONTHS = 0,
 
 	SCORNFUL_INSULT_MULTIPLIER = 2,
 

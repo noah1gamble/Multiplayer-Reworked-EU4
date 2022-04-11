@@ -1,0 +1,122 @@
+# Turkish Events
+namespace = mr_flavor_tur
+
+# Rise of Rum
+
+	country_event = {
+		id = mr_flavor_tur.1
+		title = mr_flavor_tur.1.t
+		desc = mr_flavor_tur.1.d
+
+		picture = LIBERUM_VETO_eventPicture
+
+		fire_only_once = yes
+		major = yes
+
+		trigger = {
+			tag = TUR
+			is_subject = no
+			NOT = { has_reform = celestial_empire }
+			TUR = {
+				exists = yes
+				is_subject = no
+				NOT = { junior_union_with = RUM }
+				dynasty = "Osmanoglu"
+			}
+			NOT = { is_year = 1455 }
+		}
+
+		immediate = {
+			set_global_flag = tur_rise_of_rum_outcome_flag
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = rum_area
+					}
+					cede_province = RUM
+				}
+				every_owned_province = {
+					limit = {
+						area = karaman_area
+					}
+					cede_province = RUM
+				}
+				every_owned_province = {
+					limit = {
+						area = ankara_area
+					}
+					cede_province = RUM
+				}
+				every_owned_province = {
+					limit = {
+						area = germiyan_area
+					}
+					cede_province = RUM
+				}
+				RUM = {
+					set_country_flag = recent_independence_rum
+					add_government_reform = ottoman_government
+					add_stability = 1
+					add_prestige = 15
+				}
+			}
+		}
+
+		mean_time_to_happen = {
+			months = 12
+			modifier = {
+				factor = 0.1
+				is_year = 1447
+			}
+			modifier = {
+				factor = 0.01
+				is_year = 1449
+			}
+			modifier = {
+				factor = 0.001
+				is_year = 1451
+			}
+		}
+
+		option = { # Refuse this nonsense!
+			name = "mr_flavor_tur.1.a"
+			ai_chance = {
+				factor = 50
+			}
+			declare_war_with_cb = {
+				who = RUM
+				casus_belli = cb_core
+			}
+			capital_scope = { add_unrest = 4 }
+		}
+
+		option = { # Union with Rum
+			name = "mr_flavor_tur.1.b"
+			ai_chance = {
+				factor = 25
+			}
+			create_union = RUM
+			add_prestige = 5
+			RUM = {
+				random_owned_province = { add_unrest = 6 }
+				add_stability = -1
+			}
+		}
+
+		option = { # Allow Rum to be Independent
+			name = "mr_flavor_tur.1.c"
+			ai_chance = {
+				factor = 25
+			}
+			add_prestige = -10
+			add_stability = -1
+			RUM = {
+				add_opinion = {
+					who = TUR
+					modifier = mr_allowed_independence
+				}
+			}
+		}
+	}
+
+# Greek Revolt

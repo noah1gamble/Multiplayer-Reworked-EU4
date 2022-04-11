@@ -1,7 +1,7 @@
 ########################################
 # Flavor events for Poland
 #
-# written by Sara Wendel-Örtqvist
+# written by Sara Wendel-ï¿½rtqvist
 ########################################
 
 namespace = flavor_pol
@@ -1082,7 +1082,7 @@ country_event = {
 	}
 }
 
-# Michal Sedziwój
+# Michal Sedziwï¿½j
 country_event = {
 	id = flavor_pol.6
 	title = "flavor_pol.EVTNAME6"
@@ -1113,7 +1113,7 @@ country_event = {
 		add_adm_power = 100
 		define_advisor = {
 			type = philosopher
-			name = "Michal Sedziwój"
+			name = "Michal Sedziwï¿½j"
 			culture = polish
 			discount = yes
 			skill = 3
@@ -1699,8 +1699,8 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
+	option = { # We must retain the Jagiellon Dynasty
+		name = flavor_pol.18.a
 		trigger = {
 			LIT = {
 				ai = yes
@@ -1708,7 +1708,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 50
+			factor = 22
 		}
 		create_union = LIT
 		country_event = {
@@ -1716,10 +1716,10 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = flavor_pol.18.b #Appoint a Local Noble.
+	option = { # Appoint a Local Noble
+		name = flavor_pol.18.b
 		ai_chance = {
-			factor = 25
+			factor = 44
 		}
 		define_ruler = {
 			change_dip = 3
@@ -1741,6 +1741,62 @@ country_event = {
 			add_opinion = {
 				who = ROOT
 				modifier = lit_denied_birthright
+			}
+		}
+	}
+
+	option = { # Divide Lithuania
+		name = flavor_pol.18.c
+		ai_chance = {
+			factor = 33
+		}
+		if = {
+			limit = {
+				PLT = { exists = no }
+			}
+			LIT = {
+				release = PLT
+			}
+		}
+		if = {
+			limit = {
+				SMO = { exists = no }
+			}
+			LIT = {
+				release = SMO
+			}
+		}
+		if = {
+			limit = {
+				CHR = { exists = no }
+			}
+			LIT = {
+				291 = { add_core = CHR }
+				release = CHR
+			}
+		}
+		if = {
+			limit = {
+				KIE = { exists = no }
+			}
+			LIT = {
+				release = KIE
+			}
+		}
+		if = {
+			limit = {
+				VOL = { exists = no }
+			}
+			LIT = {
+				release = VOL
+			}
+		}
+		if = {
+			limit = {
+				ZAZ = { exists = no }
+			}
+			LIT = {
+				release = ZAZ
 			}
 		}
 	}

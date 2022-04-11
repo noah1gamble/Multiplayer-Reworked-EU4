@@ -6,5 +6,5 @@ tags={
 	"Events"
 }
 name="Mutliplayer: Reworked"
-supported_version="1.33.2"
+supported_version="1.33.*"
 remote_file_id="2778791629"

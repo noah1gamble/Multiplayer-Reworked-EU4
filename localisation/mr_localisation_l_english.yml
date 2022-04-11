@@ -1,0 +1,13 @@
+﻿l_english:
+
+ flavor_pol.18.c: "Division of Lithuania"
+ flavor_spa.18.c: "Division of Iberia"
+
+ mr_flavor_tur.1: "Rise of Rum"
+ mr_flavor_tur.1.t: "Rise of Rum"
+ mr_flavor_tur.1.d: "The Rum Sultunate has risen up against us and is demanding free reign over their territory but this is clear treason."
+ mr_flavor_tur.1.a: "We will never surrender Turkish lands!"
+ mr_flavor_tur.1.b: "Integration is the solution."
+ mr_flavor_tur.1.c: "We must concede."
+
+ mr_allowed_independence: "Allowed Independence"

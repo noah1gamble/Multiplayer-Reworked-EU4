@@ -1,0 +1,7 @@
+#####################
+# OPINION MODIFIERS #
+#####################
+
+mr_allowed_independence = {
+	opinion = 100
+}

@@ -1,5 +1,11 @@
 Development Information for Multiplayer Reworked
 
+Planned Changes:
+
+English Revolt
+Egypt Revolt
+Timurid Revolt
+
 Event Changes:
 
 Polish Lituanian Union (flavor_pol.18) adds two new options that
@@ -7,11 +13,42 @@ Polish Lituanian Union (flavor_pol.18) adds two new options that
 2.  Divides Lithuania between all possible nations and Poland inherits the remainder of Lithuania
 All three option have been adjusted to be equally possible instead of being heavily in favour of union
 
-Iberian Union () adds a new option
+Iberian Union (flavor_spa.3716) adds a new option
 1.  Divides Aragon and Naples between all possible nations
 1.  Divides Aragon and Naples between all possible nations and Castille inherits the remainder of Aragon
 
 Defines Changes:
 
 Province Exploitation can now be done without monthly limitation
-1.  EXPLOIT_COOLDOWN_MONTHS = 240 (Line 485)
+1.  EXPLOIT_COOLDOWN_MONTHS = 240 (Changed to 0)
+2.  HRE_AUTHORITY_JOIN_EMPIRE = 5 (Changed to 10)
+3.  NUM_OF_GREAT_POWERS = 8 (Changed to 9)
+4.  THREATEN_WAR_PRESTIGE = 10 (Changed to 15)
+
+
+LITHUANIA RELEASABLE TAGS
+
+- PLT
+- SMO
+- CHR
+- KIE
+- VOL
+- ZAZ
+
+291, to be transferred, TODO
+
+ARAGON RELEASABLE TAGS
+
+- VAL
+- CAT
+- MJO
+- SAR
+- SIC
+- JAI (MALTA - PROVINCE 126)
+
+CASTILLE RELEASABLE TAGS
+
+- GAL
+- LON
+- ASU
+
