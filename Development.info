@@ -24,6 +24,7 @@ Province Exploitation can now be done without monthly limitation
 2.  HRE_AUTHORITY_JOIN_EMPIRE = 5 (Changed to 10)
 3.  NUM_OF_GREAT_POWERS = 8 (Changed to 9)
 4.  THREATEN_WAR_PRESTIGE = 10 (Changed to 15)
+5.  PO_FORM_PU_AE = 0.20 (Changed from 0.09)
 
 
 LITHUANIA RELEASABLE TAGS
